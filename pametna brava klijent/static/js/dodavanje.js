@@ -30,7 +30,7 @@ document.querySelector("#forma").addEventListener("submit",async function(event)
 
         console.log("Uneti podaci:", formEntries);
 
-        const response = await fetch('http://samsungappslab.vtsnis.edu.rs:3000/korisnik-novi', {
+        const response = await fetch('https://samsungappslab.vtsnis.edu.rs/api/korisnik-novi', {
         method: "POST",
         credentials: "include",
         headers: {

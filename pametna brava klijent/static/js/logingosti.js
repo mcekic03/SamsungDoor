@@ -9,7 +9,7 @@ document.getElementById("loginButton").addEventListener("click", async function(
     const prezime = document.getElementById("password").value;
     
     
-        const response = await fetch('http://samsungappslab.vtsnis.edu.rs:3000/logingosti', {
+        const response = await fetch('https://samsungappslab.vtsnis.edu.rs/api/logingosti', {
             method: "POST",
             credentials: "include",
             headers: {

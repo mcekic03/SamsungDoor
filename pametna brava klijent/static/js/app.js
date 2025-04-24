@@ -39,7 +39,7 @@ dugmeOdkljucaj.addEventListener("click", async function(e) {
     else{
         e.preventDefault();
         document.querySelector(".lock-img").src = "static/photos/unlocked_lock.svg"
-        const response = await fetch('http://samsungappslab.vtsnis.edu.rs:3000/appp', {
+        const response = await fetch('https://samsungappslab.vtsnis.edu.rs/api/appp', {
             method: "POST",
             credentials: "include",
             headers: {

@@ -12,7 +12,7 @@ if (!sessionStorage.getItem("dozvoljen_pristup")) {
 
 document.querySelector("#gostiomoguci").addEventListener("click", async function(e) {
     e.preventDefault();
-    const response = await fetch(`http://samsungappslab.vtsnis.edu.rs:3000/gostionica`, {
+    const response = await fetch(`https://samsungappslab.vtsnis.edu.rs/api/gostionica`, {
         method: "POST",
         credentials: "include",
         headers: {
@@ -47,7 +47,7 @@ window.onload = async function() {
     }
     try {
         try {
-            const response = await fetch('http://samsungappslab.vtsnis.edu.rs:3000/gosti-dozvola', {
+            const response = await fetch('https://samsungappslab.vtsnis.edu.rs/api/gosti-dozvola', {
                 method: 'GET',
                 credentials: "include",
                 headers: {
@@ -80,7 +80,7 @@ window.onload = async function() {
         
 
 
-        const response = await fetch('http://samsungappslab.vtsnis.edu.rs:3000/korisnici', {
+        const response = await fetch('https://samsungappslab.vtsnis.edu.rs/api/korisnici', {
             method: 'GET',
             credentials: "include",
             headers: {
@@ -167,7 +167,7 @@ window.onload = async function() {
             } else if (button.classList.contains("brisanjeB")) {
                 if (confirm("Da li ste sigurni da želite da obrišete korisnika?")) {
 
-                    fetch(`http://samsungappslab.vtsnis.edu.rs:3000/korisnik-brisanje/${korisnikId}`, { 
+                    fetch(`https://samsungappslab.vtsnis.edu.rs/api/korisnik-brisanje/${korisnikId}`, { 
                         method: "POST",
                         credentials: "include",
                         headers: {

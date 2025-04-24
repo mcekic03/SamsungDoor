@@ -19,7 +19,7 @@ window.onload = async function() {
     }
     else{
         try {
-            const response = await fetch(`http://samsungappslab.vtsnis.edu.rs:3000/korisnik-izmena/${idizmena}`, {
+            const response = await fetch(`https://samsungappslab.vtsnis.edu.rs/api/korisnik-izmena/${idizmena}`, {
                 method: 'GET',
                 credentials: "include",
                 headers: {
@@ -67,7 +67,7 @@ forma.addEventListener("submit",async function(event) {
 
         console.log("Uneti podaci:", formEntries);
 
-        const response = await fetch(`http://samsungappslab.vtsnis.edu.rs:3000/korisnik-izmena/${idizmena}`, {
+        const response = await fetch(`https://samsungappslab.vtsnis.edu.rs/api/korisnik-izmena/${idizmena}`, {
         method: "POST",
         credentials: "include",
         headers: {

@@ -21,7 +21,7 @@ window.onload = async function() {
     }
 
     try {
-        const response = await fetch(`http://samsungappslab.vtsnis.edu.rs:3000/istorijaGosti`, {
+        const response = await fetch(`https://samsungappslab.vtsnis.edu.rs/api/istorijaGosti`, {
             method: 'GET',
             credentials: "include",
             headers: {

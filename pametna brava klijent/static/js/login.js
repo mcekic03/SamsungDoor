@@ -18,7 +18,7 @@ document.getElementById("loginButton").addEventListener("click", async function(
     const lozinka = document.getElementById("password").value;
     if(email === "guest" && lozinka === "guest"){
         try {
-            const response = await fetch('http://samsungappslab.vtsnis.edu.rs:3000/gosti-dozvola', {
+            const response = await fetch('https://samsungappslab.vtsnis.edu.rs/api/gosti-dozvola', {
                 method: 'GET',
                 credentials: "include",
                 headers: {
@@ -48,7 +48,7 @@ document.getElementById("loginButton").addEventListener("click", async function(
         
     }
     else{
-        const response = await fetch('http://samsungappslab.vtsnis.edu.rs:3000/login', {
+        const response = await fetch('https://samsungappslab.vtsnis.edu.rs/api/login', {
             method: "POST",
             credentials: "include",
             headers: {
